@@ -2,47 +2,37 @@
 
 An interactive, web-based simulator designed to help users understand and visualize how different CPU and Disk scheduling algorithms work. Built with a focus on educational clarity, this tool is ideal for students and operating system enthusiasts who want to explore scheduling concepts through hands-on interaction.
 
-CPU Scheduling Algorithms Supported:
-  First Come First Serve (FCFS)
+  CPU Scheduling Algorithms Supported:
   
-  Round Robin (RR)
+      First Come First Serve (FCFS)
+      Round Robin (RR)
+      Shortest Job First (SJF)
+      Shortest Remaining Time First (SRTF)
+      Priority Scheduling
   
-  Shortest Job First (SJF)
+  Disk Scheduling Algorithms Supported:
   
-  Shortest Remaining Time First (SRTF)
+      FCFS (First Come First Serve)
+      SSTF (Shortest Seek Time First)
+      SCAN
+      LOOK
+      C-SCAN
+      C-LOOK
   
-  Priority Scheduling
+  Key Features:
+  
+      Educational Focus
+        Built to simplify complex scheduling algorithms through step-by-step animations and clear process flow.
+      Interactive Configuration
+        Users can add, edit, and configure process or disk requests with parameters like arrival time, burst time, priority, and seek         position.
+      Real-Time Visualization
+        Animates CPU and disk executions, helping users visually grasp queue operations and scheduling order.
+      Clean User Interface
+          Styled with Tailwind CSS, offering light/dark themes and a minimal, responsive layout.
+      Modular and Scalable Architecture
+      Built with reusable components in Next.js and TypeScript for maintainability and future extensibility.
 
-Disk Scheduling Algorithms Supported:
-  FCFS (First Come First Serve)
-  
-  SSTF (Shortest Seek Time First)
-  
-  SCAN
-  
-  LOOK
-  
-  C-SCAN
-  
-  C-LOOK
-
-Key Features
-  Educational Focus
-    Built to simplify complex scheduling algorithms through step-by-step animations and clear process flow.
-  
-  Interactive Configuration
-    Users can add, edit, and configure process or disk requests with parameters like arrival time, burst time, priority, and seek position.
-  
-  Real-Time Visualization
-    Animates CPU and disk executions, helping users visually grasp queue operations and scheduling order.
-  
-  Clean User Interface
-      Styled with Tailwind CSS, offering light/dark themes and a minimal, responsive layout.
-  
-  Modular and Scalable Architecture
-  Built with reusable components in Next.js and TypeScript for maintainability and future extensibility.
-
-🔗 **Live Demo:** [https://os-algo-simulator.vercel.app](https://os-algo-simulator.vercel.app
+🔗 **Live Demo:** [https://os-algo-simulator.vercel.app](https://os-algo-simulator.vercel.app)
 ---
 
 ## 📌 Table of Contents
