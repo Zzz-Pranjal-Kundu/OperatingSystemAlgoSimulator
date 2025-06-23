@@ -49,7 +49,7 @@ _______________________________________________________________
 ---
 
 ## 📁 Project Structure
-
+<pre>
 scheduling-algorithm-simulator/
 ├── components/
 │ └── ProcessForm.tsx
@@ -61,7 +61,7 @@ scheduling-algorithm-simulator/
 ├── public/
 ├── utils/
 └── app/
-
+</pre>
 
 ---
 
