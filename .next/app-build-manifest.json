@@ -16,6 +16,12 @@
       "static/chunks/main-app.js",
       "static/css/app/cpu/page.css",
       "static/chunks/app/cpu/page.js"
+    ],
+    "/disk/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/disk/page.css",
+      "static/chunks/app/disk/page.js"
     ]
   }
 }
