@@ -1,114 +1,146 @@
-# CPU Scheduling Algorithm Simulator
+# 🧠 CPU Scheduling Algorithm Simulator
 
-An interactive simulator for learning and testing various CPU scheduling algorithms, including First Come First Serve (FCFS), Round Robin(RR), Shortest Job First(SJF) and Shortest Remaining Time First(SRTF). This project provides a visual and dynamic way to understand scheduling algorithms, making it ideal for students and enthusiasts interested in operating systems.
+An interactive, web-based simulator for learning and visualizing various CPU scheduling algorithms including **First Come First Serve (FCFS)**, **Round Robin (RR)**, **Shortest Job First (SJF)**, and **Shortest Remaining Time First (SRTF)**. Built to aid students and operating system enthusiasts in intuitively grasping how CPU schedulers work.
+
+---
+
+## 📌 Table of Contents
+
+- [📖 Overview](#-overview)
+- [✨ Features](#-features)
+- [🛠️ Technologies Used](#-technologies-used)
+- [📁 Project Structure](#project-structure)
+- [🚀 Installation](#-installation)
+- [🧪 Usage](#-usage)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 📖 Overview
+
+This simulator enables users to input processes with configurable parameters such as **arrival time**, **burst time**, and visualize how they are executed under different CPU scheduling strategies. The real-time animations provide a clearer understanding of how scheduling affects process execution.
+
+---
+
+## ✨ Features
+
+- 🎛 **Interactive Process Form** – Add processes with attributes like arrival time, burst time, and custom colors.
+- 🧮 **Multiple Scheduling Algorithms** – Supports FCFS, RR, SJF, and SRTF.
+- 🎞 **Real-Time Visual Feedback** – Watch processes animate through the scheduler dynamically.
+- 🌗 **Dark/Light Mode** – Seamless theme toggle with `ThemeProvider`.
+- 🔍 **Validation with Zod** – Ensures clean and valid user inputs.
+- ⚡ **Responsive Design** – Works smoothly across devices.
+
+---
+
+## 🛠️ Technologies Used
+______________________________________________________________
+| Tech Stack         | Purpose                                |
+|--------------------|----------------------------------------|
+| **Next.js**        | React-based framework for the UI       |
+| **TypeScript**     | Type safety and developer experience   |
+| **Tailwind CSS**   | Utility-first modern styling           |
+| **React Hook Form**| Form state management                  |
+| **Zod**            | Schema validation                      |
+| **Lucide Icons**   | Iconography for modern UIs             |
+_______________________________________________________________
+
+---
+
+## 📁 Project Structure
+
+scheduling-algorithm-simulator/
+├── components/
+│ └── ProcessForm.tsx
+│ └── SimulatorCanvas.tsx
+├── pages/
+│ └── index.tsx
+│ └── cpu.tsx
+├── styles/
+├── public/
+├── utils/
+└── app/
 
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+---
 
-## Overview
+## 🚀 Installation
 
-This project is a web-based simulator for CPU scheduling algorithms. It allows users to input different processes with specific attributes (arrival time, burst time, etc.) and visualize how these processes are scheduled according to the chosen scheduling algorithm.
+> **Prerequisites**:  
+> Node.js, npm or Yarn installed.
 
-## Features
-
-- **Interactive Form**: Add and configure processes with attributes such as arrival time, burst time, and background color.
-- **Scheduling Algorithms**: Currently supports FCFS (First Come First Serve), RR (Round Robin), SJF (Shortest Job First) and SRTF (Shortest Remaining Time First).
-- **Real-Time Visualization**: Watch processes as they are scheduled and executed based on selected algorithms.
-- **Dark Mode Support**: Uses a ThemeProvider for seamless switching between dark and light themes.
-
-## Technologies Used
-
-- **Next.js**: Frontend framework for React applications.
-- **TypeScript**: Provides type safety and ensures code robustness.
-- **Tailwind CSS**: Utility-first CSS framework for styling.
-- **Zod**: For form validation schemas.
-- **React Hook Form**: Handles form state and validation.
-- **Custom Components**: Built-in components like `GradientPicker` for user-friendly UI interactions.
-
-
-## Installation
-
-To set up the project locally, ensure you have [Node.js](https://nodejs.org/en/download/) and [Yarn](https://classic.yarnpkg.com/en/docs/install/) or [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
-
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/kautilyadevaraj/SchedulingAlgorithmSimulator
-cd scheduling-algorithm-simulator
+git clone https://github.com/Zzz-Pranjal-Kundu/OperatingSystemAlgoSimulator.git
+cd OperatingSystemAlgoSimulator
+
 ```
-
-### Step 2: Install Dependencies
-
-Run the following command to install the necessary dependencies.
-#### Using Yarn
-```bash
+### 2. Install Dependencies
+```
+# Using Yarn
 yarn install
-```
 
-#### OR using npm
-```bash
+# OR using npm
 npm install
 ```
 
-### Step 3: Environment Setup
+### 3. Start Development Server
 
-No environment variables are required for this project in its current state. However, if you extend the project with a backend API or database, create a .env.local file in the root directory for environment variables.
-
-### Step 4: Run the Development Server
-
-Start the development server by running:
-#### Using Yarn
 ```bash
+# Using Yarn
 yarn dev
-```
 
-#### OR using npm
-```bash
+# OR using npm
 npm run dev
 ```
-This will start the Next.js development server at [http://localhost:3000](http://localhost:3000). You can view the project in your browser by navigating to this address.
+Now open your browser and go to http://localhost:3000
 
-## Step 5: Build for Production (Optional)
+---
 
-If you want to build the project for production, run:
-#### Using Yarn
+
+## 📦 Build for Production
 ```bash
+# Using Yarn
 yarn build
-```
 
-#### OR using npm
-```bash
+# OR using npm
 npm run build
 ```
-This will create an optimized production build in the .next folder.
+The production build will be available in the .next/ directory.
 
-## Usage
 
-1. Add Processes: Use the form to add processes with specific arrival times, burst times, and custom background colors.
-2. Select Algorithm: Choose a scheduling algorithm from the provided options (e.g., SRTF, FCFS).
-3. Run Simulation: The simulator will display the scheduling results in a real-time animation.
+---
 
-## Contributing
+## 🧪 Usage
+  ➕ Add Processes – Enter process details via the form.
+  
+  🔄 Select Algorithm – Choose FCFS, RR, SJF, or SRTF.
+  
+  ▶ Start Simulation – Visualize how the CPU schedules and executes the processes.
 
-We welcome contributions! To contribute to this project, please follow these steps:
+---
 
-1. Fork the repository.
-2. Create a new branch (git checkout -b feature-branch-name).
-3. Make your changes.
-4. Commit your changes (git commit -m 'Add some feature').
-5. Push to the branch (git push origin feature-branch-name).
-6. Open a Pull Request.
+## 🤝 Contributing
+    We welcome contributions! Here's how to get started:
+    
+    Fork this repo.
+    
+    Create a branch: git checkout -b your-feature-name
+    
+    Commit your changes: git commit -m "Add some feature"
+    
+    Push the branch: git push origin your-feature-name
+    
+    Open a Pull Request.
+    
+    For major feature proposals, please open an issue first.
+---
 
-For major changes, please open an issue first to discuss what you would like to change.
+📄 License
+This project is open-sourced under the MIT License.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+✨ Made with love for learners and OS geeks by ZzzPranjalzzZ.
