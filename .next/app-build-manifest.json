@@ -20,8 +20,12 @@
     "/disk/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/disk/page.css",
       "static/chunks/app/disk/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

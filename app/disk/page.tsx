@@ -1,16 +1,13 @@
 import NavBar from "@/components/ui/NavBar";
 import DiskForm from "@/components/disk/DiskForm";
-import HyperText from "@/components/ui/hyper-text";
+import AnimatedTitle from "@/components/ui/TitleTyping";
 
 export default function DiskPage() {
   return (
     <div className="min-h-screen">
       <NavBar />
       <div className="container max-w-4xl mx-auto p-5">
-        <HyperText
-          className="text-3xl font-semibold text-black dark:text-white mb-6"
-          text="Disk Scheduling"
-        />
+        <AnimatedTitle content="DISK SCHEDULING" icon="disk" />
         <DiskForm />
       </div>
     </div>
