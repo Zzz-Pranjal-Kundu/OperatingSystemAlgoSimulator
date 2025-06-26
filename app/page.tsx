@@ -350,8 +350,7 @@ Average Seek Time = Total Seek Time / Number of Requests
         </AnimatePresence>
 
         <footer className="text-sm text-neutral-600 dark:text-neutral-400 text-center pt-10">
-          Made by <span className="text-pink-400">VisualEyeZers</span> |{" "}
-          <span className="text-red-400">Pranjal Kundu, Priyanshu Aswal, Janvi Rawat, Sumit Tariyal</span> |{" "}
+          Made by <span className="text-pink-400">Pranjal Kundu</span> |{" "}
           <span className="italic text-indigo-500">ScheduloViz</span> © 2025
         </footer>
       </main>
